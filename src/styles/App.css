@@ -1,0 +1,141 @@
+.container {
+  width: 95%;
+  max-width: 1420px;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login {
+  width: 100%;
+  height: 100vh;
+  background-color: #aeeee4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login .container .login_container {
+  width: 30%;
+  height: 70vh;
+  margin: 0 auto;
+  background-color: #37e9a1;
+  border-radius: 10px;
+}
+.login .container .login_container .login_top {
+  background: transparent;
+  height: 50%;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.login .container .login_container .login_top h2 {
+  color: #FFFFFF;
+  font-size: 25px;
+  font-weight: 500;
+}
+.login .container .login_container .login_bottom {
+  height: 68%;
+  background-color: #FFFFFF;
+  border-radius: 100px 0 10px 10px;
+  margin-top: -90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login .container .login_container .login_bottom input {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid lightgreen;
+  outline: none;
+}
+.login .container .login_container .login_bottom label {
+  width: 80%;
+  color: #1b1b1b;
+  display: inline-block;
+}
+.login .container .login_container .login_bottom Button {
+  width: 80%;
+  background-color: #37e9a1;
+}
+.login .container .register_btn {
+  width: 50%;
+  margin: 0 auto;
+}
+.login .container .register_btn Button {
+  background-color: #37e9a1;
+  margin: 0 auto;
+}
+
+.register {
+  width: 100%;
+  height: 100vh;
+  background-color: #aeeee4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.register .container .register_container {
+  width: 30%;
+  height: 70vh;
+  margin: 0 auto;
+  background-color: #37e9a1;
+  border-radius: 10px;
+}
+.register .container .register_container .register_top {
+  background: transparent;
+  height: 50%;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.register .container .register_container .register_top h2 {
+  color: #FFFFFF;
+  font-size: 25px;
+  font-weight: 500;
+}
+.register .container .register_container .register_bottom {
+  height: 68%;
+  background-color: #FFFFFF;
+  border-radius: 100px 0 10px 10px;
+  margin-top: -90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.register .container .register_container .register_bottom input {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid lightgreen;
+  outline: none;
+}
+.register .container .register_container .register_bottom label {
+  width: 80%;
+  color: #1b1b1b;
+  display: inline-block;
+}
+.register .container .register_container .register_bottom Button {
+  width: 80%;
+  background-color: #37e9a1;
+}
+.register .container .register_btn {
+  width: 50%;
+  margin: 0 auto;
+}
+.register .container .register_btn Button {
+  background-color: #37e9a1;
+  margin: 0 auto;
+}/*# sourceMappingURL=App.css.map */
