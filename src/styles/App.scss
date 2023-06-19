@@ -2,6 +2,13 @@
 @import"./config/variabless";
 @import"./config/mixins";
 
+// components
+@import"./components/list";
+@import"./components/task";
+
 // pages
 @import"./pages/login";
 @import"./pages/register";
+@import"./pages/main";
+@import"./pages/addList";
+@import"./pages/taskPage";

@@ -38,6 +38,7 @@
           width: 80%;
           color: #1b1b1b;
           display: inline-block;
+          cursor: pointer;
         }
         Button{
           width: 80%;
@@ -46,8 +47,8 @@
       }
     }
     .register_btn{
-      width: 50%;
-      margin: 0 auto;
+      text-align: center;
+      margin-top: 30px;
       Button{
         background-color: #37e9a1;
         margin: 0 auto;

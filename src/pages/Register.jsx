@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
 import { AxiosInstance } from '../common/AxiosInstance';
+// import Done from '../../public/images/Done.svg'
 
 const Register = () => {
   const [data,setData] = useState({
@@ -52,7 +53,7 @@ const Register = () => {
               <label htmlFor="password">Password</label>
               <input type="password" id="password" name='password' onChange={(e)=>handleData(e)}/>
               <br />
-              <Button variant="contained">Register</Button>
+              <Button onClick={sendData} variant="contained">Register</Button>
             </div>
           </div>
           <div className="register_btn">

@@ -1,13 +1,39 @@
 import React,{useState} from 'react';
 import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
+import { AxiosInstance } from '../common/AxiosInstance';
 
 const Login = () => {
   const [data,setData] = useState({
     username: "",
-    email: "",
     password: ""
   })
+
+  const handleData = (e)=>{
+    const value = e.target.value;
+    const name = e.target.name;
+
+    setData({...data,[name]:value});
+  }
+
+  const sendData = async ()=>{
+    if(data.username && data.password){
+      try {
+        const res = await AxiosInstance.post('/api/v1/users/login', data);
+        sessionStorage.setItem('token',res.data.token);
+        if(res.status === 200){
+          //main paga oklamaly
+        }
+      } catch ({response}) {
+        console.log(response.data.status)
+        if(response.data.status === 400){
+          alert("Username or password wrong")
+        }
+      }
+    }else{
+      alert("Unexpected error in server side")
+    }
+  }
 
   return (
     <div className='login'>
@@ -18,12 +44,12 @@ const Login = () => {
             </div>
             <div className="login_bottom">
               <label htmlFor="userName">Username</label>
-              <input type="text" id="userName" name='username' />
+              <input type="text" id="userName" name='username' onChange={(e)=>handleData(e)} />
               <br />
               <label htmlFor="password">Password</label>
-              <input type="password" id="password" name='password' />
+              <input type="password" id="password" name='password' onChange={(e)=>handleData(e)} />
               <br />
-              <Button variant="contained">Sign In</Button>
+              <Button onClick={sendData} variant="contained">Sign In</Button>
             </div>
           </div>
           <div className="register_btn">
